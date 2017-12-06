@@ -1,0 +1,12 @@
+<div class="feedback" ng-class="ctrl.settings.type">
+  <div class="feedback-header" ng-bind="ctrl.settings.header"></div>
+  <div ng-if="ctrl.message" class="feedback-message">
+    <span ng-bind="ctrl.message"></span>
+  </div>
+  <div ng-if="!ctrl.message" class="feedback-message">
+    <ng-transclude></ng-transclude>
+  </div>
+  <a class="close" ng-click="ctrl.close()">
+    <i class="fa fa-times"></i>
+  </a>
+</div>

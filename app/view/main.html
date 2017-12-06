@@ -1,0 +1,14 @@
+<div>
+    <input placeholder="Set header" ng-model="$ctrl.setHeader">
+    <input placeholder="Set message" ng-model="$ctrl.setMessage">
+    <select ng-model="$ctrl.setCategory" ng-options="cat.category as cat.category for cat in $ctrl.categories">
+        <option value="Select category"></option>
+    </select>
+    <hr>
+    <button type="button" class="info" ng-click="$ctrl.showNotification('info')">Raise info</button>
+    <button type="button" class="warning" ng-click="$ctrl.showNotification('warning')">Raise warning</button>
+    <button type="button" class="error" ng-click="$ctrl.showNotification('error')">Raise error</button>
+    <button type="button" ng-click="$ctrl.clearAll()">Clear all notifications</button>
+
+    <ri-feedback-container class="popup-inline" feedback-id="inlineMessages"></ri-feedback-container>
+</div>
