@@ -1,4 +1,4 @@
-Inside folder challenge, run
+Inside folder run
 ```
 npm install
 ```
